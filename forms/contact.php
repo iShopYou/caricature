@@ -26,10 +26,14 @@
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
 
   $contact->smtp = array(
-    'host' => 'ssl://smtp.googlemail.com',
-    'username' => 'ishopyouemailsender@gmail.com',
-    'password' => 'i$hopyoumailer5',
-    'port' => '465'
+    'protocol'  => 'smtp',
+    'smtp_host' => 'ssl://smtp.googlemail.com',
+    'smtp_port' => '465',
+    'smtp_user' => 'ishopyouemailsender@gmail.com',
+    'smtp_pass' => 'i$hopyoumailer5',
+    'mailtype'  => 'html',
+    'starttls'  => true,
+    'newline'   => "\r\n"
   );
 
 
