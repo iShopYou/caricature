@@ -78,6 +78,24 @@
   <!-- Initialize yall -->
   <script>document.addEventListener("DOMContentLoaded", yall);</script>
 
+  <script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector("img")
+    const header_height = header.offsetHeight
+  
+    const add_class_on_scroll = () => header.classList.add("lazy")
+    const remove_class_on_scroll = () => header.classList.remove("lazy")
+  
+    window.addEventListener('scroll', function() { 
+      scrollpos = window.scrollY;
+  
+      if (scrollpos <= header_height) { remove_class_on_scroll() }
+      else { add_class_on_scroll() }
+  
+      console.log(scrollpos)
+    })
+  </script>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
