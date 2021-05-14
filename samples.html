@@ -181,40 +181,41 @@
 
         <p id="timer" style="text-align: center; font-weight: bold; font-size: 20px;"></p>
 
-        <!-- countdown timer and offer -->
-        <script>
-          // Set the date we're counting down to
-          var countDownDate = new Date("May 14, 2021 19:59:59").getTime();
+        <!-- Promo and Timer -->
+      <br><br><br>
+      <p id="timer" style="text-align: center; font-weight: bold; font-size: 20px;"></p>
 
-          // Update the count down every 1 second
-          var x = setInterval(function() {
+      <!-- countdown timer and offer -->
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 31, 2021 23:59:59").getTime();
 
-            // Get today's date and time
-            var now = new Date().getTime();
-              
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-              
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-              
-            // Output the result in an element with id="timer"
-            document.getElementById("timer").innerHTML = "<span style='color:black; font-size: 29px;'>PROMO CODE: </span><span style='color:red; font-size: 29px;'>FS12-14WS</span><br><span style='color:red; font-size: 25px;'>FREE</span> Shipping <br> <span style='color:red; font-size: 25px;'>FREE</span> ATM Size Ref Magnet (Same design of your Caricature) <br> Limited Time Only, Hurry message Us for more details <br> Promo Ends on May 14, 2021 8:00PM Manila Time <br> <span style = 'color:red; font-size: 35px'>" + days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s </span>";
-              
-            // If the count down is over, write some text 
-            if (distance < 0) {
-              clearInterval(x);
-              document.getElementById("timer").innerHTML = "";
-            }
-          }, 1000);
-          </script>
+        // Update the count down every 1 second
+        var x = setInterval(function() {
 
-      </div>
-    </section><!-- End Promo and Timer -->
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="timer"
+          document.getElementById("timer").innerHTML = "<span style='color:black; font-size: 29px;'>PROMO CODE: </span><span style='color:red; font-size: 29px;'>1GCWBV-3121</span><br><span style='color:red; font-size: 25px;'>FREE</span> Shipping <br> <span style='color:red; font-size: 25px;'>FREE</span> ATM Size Ref Magnet (Same design of your Caricature) <br> 100% Money Back Guarantee <br> Limited Time Only, Hurry message Us for more details click <a href='https://www.facebook.com/IshopyouToo'>Here</a> to visit our fb page and chat with us or use the chat box below to directly send a message to us<br> Promo Ends on May 31, 2021 11:59PM Manila Time <br> <span style = 'color:red; font-size: 35px'>" + days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s </span>";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "";
+          }
+        }, 1000);
+      </script><!-- End Promo and Timer -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
